@@ -1,0 +1,78 @@
+__ __ __ 
+|1| 2| 3|
+__ __ __ 
+|4| 5| 6|
+__ __ __ 
+|7| 8| 9|
+__ __ __
+       \ (exit)
+
+{
+    "rooms": [
+        {
+            "id": 1
+            "roomNorth": null,
+            "roomEast": 2,
+            "roomSouth": 4,
+            "roomWest": null
+        },
+        {
+            "id": 2
+            "roomNorth": null,
+            "roomEast": 3,
+            "roomSouth": 5,
+            "roomWest": 1
+        },
+        {
+            "id": 3
+            "roomNorth": null,
+            "roomEast": null,
+            "roomSouth": 6,
+            "roomWest": 2
+        },
+        {
+            "id": 4
+            "roomNorth": 1,
+            "roomEast": 5,
+            "roomSouth": 7,
+            "roomWest": null
+        },
+        {
+            "id": 5
+            "roomNorth": 2,
+            "roomEast": 6,
+            "roomSouth": 8,
+            "roomWest": 4
+        },
+        {
+            "id": 6
+            "roomNorth": 3,
+            "roomEast": null,
+            "roomSouth": 9,
+            "roomWest": 5
+        },
+        {
+            "id": 7
+            "roomNorth": 4,
+            "roomEast": 8,
+            "roomSouth": null,
+            "roomWest": null
+        },
+        {
+            "id": 8
+            "roomNorth": 5,
+            "roomEast": 9,
+            "roomSouth": null,
+            "roomWest": 7
+        },
+        {
+            "id": 9
+            "roomNorth": 6,
+            "roomEast": null,
+            "roomSouth": "exit",
+            "roomWest": 8
+        },
+    ]
+}
+
+Validation: no two rooms should have the same value for adjoining rooms except "null".
